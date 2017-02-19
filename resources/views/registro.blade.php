@@ -1,0 +1,63 @@
+@section('title')
+	<title>Registro</title>
+@endsection
+@extends('plantilla')
+@section('content')
+	<div class="col-lg-10">
+		<div class="container form-registro">
+			<form action="{{ route('registroExito') }}">
+				<h1>Registro de Usuario</h1>
+				<br>
+				<div class="form-group">
+					<label for="nDocumento">N° de Documento:<span class="required"> *</span></label>
+					<div class="row">
+						<div class="col-xs-5 col-sm-3 col-md-2 col-lg-2">
+							<select class="selectpicker form-control" required="required">
+								<option selected="selected" value="V-">V-</option>
+								<option value="E-">E-</option>
+								<option value="P-">P-</option>
+							</select>
+						</div>
+						<div class="col-xs-10 col-sm-9 col-md-10 col-lg-5">
+							<input type="text" class="form-control" id="cedula" placeholder="Introduzca su cédula" required="required" pattern="\d{6,10}" title="Por favor solo números, de 6 a 10 números" autofocus="autofocus"> <!-- \d+(,\d{6-10})? 0|[1-9]\d{6,10} -->
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="Nombres"><span class="glyphicon glyphicon-user"></span> Nombres:<span class="required"> *</span></label>
+					<input type="text" class="form-control" id="nombre" placeholder="Introduzca su nombre" required="required" pattern="[A-Za-z\s]+[A-Za-z]" title="Por favor solo letras y la primera letra en mayúscula, ej: Juan">
+				</div>
+				<div class="form-group">
+					<label for="Apellidos"><span class="glyphicon glyphicon-user"></span> Apellidos:<span class="required"> *</span></label>
+					<input type="text" class="form-control" id="apellidos" placeholder="Introduzca sus apellidos" required="required" pattern="[A-Za-z\s]+[A-Za-z]" title="Por favor solo letras y la primera letra en mayúscula, ej: Peréz">
+				</div>
+				<div class="form-group">
+					<label for="Categoría"><span class="glyphicon glyphicon-tag"></span> Categoría:<span class="required"> *</span></label>
+					<div class="row">
+						<div class="col-lg-5">
+							<select class="selectpicker form-control" required="required">
+								<option value selected="selected">Seleccione...</option>
+								<option value="1">Investigador(a)</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="Correo"><span class="glyphicon glyphicon-envelope"></span> Correo:<span class="required"> *</span></label>
+					<input type="email" class="form-control" id="correo" placeholder="Introduzca su correo" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Ej: ejemplo@dominio.com">
+				</div>
+				<div class="form-group">
+					<label for="Clave"><span class="glyphicon glyphicon-eye-open"></span> Clave:<span class="required"> *</span></label>
+					<input type="password" class="form-control" id="clave" placeholder="Introduzca su clave" required="required" pattern="[A-Za-z\s0-9]{8,16}" title="La clave debe posser entre 8 y 16 caracteres">
+				</div>
+				<div class="form-group">
+					<label for="Repita la clave"><span class="glyphicon glyphicon-eye-open"></span> Repita la clave:<span class="required"> *</span></label>
+					<input type="password" class="form-control" id="repeClave" placeholder="Repita la Clave" required="required" pattern="[A-Za-z\s0-9]{8,16}" title="La clave debe posser entre 8 y 16 caracteres y debe ser igual al campo anterior">
+					<p id='demo'></p>
+				</div>
+				<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-ok"> Registrar</button><br>
+				<small>(*) Obligatorio</small>
+			</form>
+		</div>
+	</div>
+@endsection

@@ -1,0 +1,99 @@
+@section('title')
+	<title>Investigación</title>
+@endsection
+@extends('plantilla')
+@section('content')
+	<div class="col-lg-10 container"> <!-- Contenido de la página -->
+		<div id="investigacion" class="row">
+			<div class="text-justify">
+				<div id="titulo">
+					<h3>Investigaciones</h3>
+				</div>
+				<div id="busquedaArea" class="btn-group">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+				 		Seleccione el área de investigación <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Área 1</a></li>
+						<li><a href="#">Área 2</a></li>
+						<li><a href="#">Área 3</a></li>
+					</ul>
+				</div>
+				<br>
+				<br>
+				<ul class="pagination">
+		        	<li><a href="#">&laquo;</a></li>
+		        	<li class="active"><a href="#">1</a></li>
+		        	<li><a href="#">2</a></li>
+		        	<li><a href="#">3</a></li>
+		        	<li><a href="#">4</a></li>
+		        	<li><a href="#">5</a></li>
+		        	<li><a href="#">&raquo;</a></li>
+		        </ul>
+				<div class="media-left">
+					<div class="media-body">
+						<br>
+						<br>
+						<h4 class="media-heading"><b>Titulo de investigación</b></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						<a href="{{ route('masInvestigacion') }}">...<ins>Ver más...</ins></a>
+						</p>
+					</div>
+					<hr>
+				</div>
+			</div>
+		</div>
+		<div id="investigacion" class="row">
+			<div class="text-justify">
+				<div class="media-left" >
+					<div class="media-body">
+						<br>
+						<h4 class="media-heading"><b>Titulo de investigación</b></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						<a href="{{ route('masInvestigacion') }}">...<ins>Ver más...</ins></a>
+						</p>
+					</div>
+					<hr>
+				</div>
+			</div>
+		</div>
+		<div id="investigacion" class="row">
+			<div class="text-justify">
+				<div class="media-left" >
+					<div class="media-body">
+						<br>
+						<h4 class="media-heading"><b>Titulo de investigación</b></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						<a href="{{ route('errorSesion') }}" data-toggle="tooltip" data-placement="right" title="Para ampliar la informacion usted debe estar registrado">...<ins>Ver más...</ins></a>
+						</p>
+					</div>
+					<hr>
+				</div>
+			</div>
+		</div>
+		<ul class="pagination">
+        	<li><a href="#">&laquo;</a></li>
+        	<li class="active"><a href="#">1</a></li>
+        	<li><a href="#">2</a></li>
+        	<li><a href="#">3</a></li>
+        	<li><a href="#">4</a></li>
+        	<li><a href="#">5</a></li>
+        	<li><a href="#">&raquo;</a></li>
+        </ul>
+	</div>
+@endsection
