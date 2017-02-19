@@ -1,0 +1,14 @@
+<?php $__env->startSection('title'); ?>
+	<title>Clave modificada</title>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+	<div class="col-lg-10">
+		<div class="form-modificarClave">
+			<form action="modificarClaveExito.html">
+				<h1>¡Modificación exitosa!</h1>
+				<h4 class="mensajeOlvidoClave">Su clave para el ingreso al sistema fue modificada satisfactoriamente, ahora podrá <a href="#" class="link" data-toggle="modal" data-target='#login' id="ingresar">ingresar</a> al sistema con normalidad</h4>
+		</div>
+	</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('plantilla', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,103 @@
+<?php $__env->startSection('title'); ?>
+	<title>Eventos</title>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+	<div class="container col-lg-10">
+    	<ul class="pagination">
+        	<li><a href="#">&laquo;</a></li>
+        	<li class="active"><a href="#">1</a></li>
+        	<li><a href="#">2</a></li>
+        	<li><a href="#">3</a></li>
+        	<li><a href="#">4</a></li>
+        	<li><a href="#">5</a></li>
+        	<li><a href="#">&raquo;</a></li>
+        </ul>		
+            
+		<div id="evento" class="row">
+			<div class="text-justify">
+				<div>
+					<h3>Eventos</h3>
+				</div>
+				<br>
+				<br>
+				<div class="media-left" >
+					<a class="pull-left" href="#">
+						<img class"media-object" src="img/even6-1.png" alt="Eventos" style="width:120px; padding: 5% 5%;">
+					</a>
+					<div class="media-body" >
+						<div class="text-justify" style="padding:0px 2px;">
+							<h3 class="media-heading"><b>Titulo del evento</b></h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<small>Publicado el 28-07-2000</small>
+						</div>
+					</div>
+					<hr>
+				</div>
+			</div>
+		</div>
+		<div id="evento" class="row">
+			<div class="text-justify">
+				<div class="media-left" >
+					<a class="pull-left" href="#">
+						<img class"media-object" src="img/even6-1.png" alt="Eventos" style="width:120px; padding: 5% 5%;">
+					</a>
+					<div class="media-body" >
+						<div class="text-justify" style="padding:0px 2px;">
+							<h3 class="media-heading"><b>Titulo del evento</b></h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<small>Publicado el 28-07-2000</small>
+						</div>
+					</div>
+					<hr>
+				</div>
+			</div>
+		</div>
+		<div id="evento" class="row">
+			<div class="text-justify">
+				<div class="media-left" >
+					<a class="pull-left" href="#">
+						<img class"media-object" src="img/even6-1.png" alt="Eventos" style="width:120px; padding: 5% 5%;">
+					</a>
+					<div class="media-body" >
+						<div class="text-justify" style="padding:0px 2px;">
+							<h3 class="media-heading"><b>Titulo del evento</b></h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<small>Publicado el 28-07-2000</small>
+						</div>
+					</div>
+					<hr>
+				</div>
+			</div>
+		</div>
+		<ul class="pagination">
+        	<li><a href="#">&laquo;</a></li>
+        	<li class="active"><a href="#">1</a></li>
+        	<li><a href="#">2</a></li>
+        	<li><a href="#">3</a></li>
+        	<li><a href="#">4</a></li>
+        	<li><a href="#">5</a></li>
+        	<li><a href="#">&raquo;</a></li>
+        </ul>
+	</div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('plantilla', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

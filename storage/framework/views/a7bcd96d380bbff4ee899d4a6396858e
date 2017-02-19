@@ -1,0 +1,9 @@
+	
+		<div class="col-lg-2 offset-lg-2">
+			<div class="container-enlace">
+				<h3>Enlaces</h3>
+				<a href="#" target="_blank"><img src="img/logo.png" width="110" height="95" style="margin-top: 10%;"><br>IUT</a><br>
+				<a href="#" target="_blank"><img src="img/extension.jpg" width="110" height="95" style="margin-top: 30%;"><br>Extensión</a><br>
+				<a href="#" target="_blank"><img src="img/controlEstudios.jpg" width="110" height="95" style="margin-top: 30%;"><br>Control de estudio</a>	
+			</div>
+		</div> 		
